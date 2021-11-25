@@ -1,7 +1,7 @@
 class Asc < Formula
   desc "App Store Connect API access via Swift command-line tool"
   homepage "https://github.com/Blackjacx/Assist"
-  url "https://github.com/Blackjacx/Assist.git", tag: "0.0.11", revision: "30c306effb2bd4cd88e02f202660368d65c58649"
+  url "https://github.com/Blackjacx/Assist.git", tag: "0.1.0", revision: "0d18ca278bfbea930fb42d0550d83cf7f13f0445"
   license "MIT"
   head "https://github.com/Blackjacx/Assist.git", branch: "develop"
 
@@ -17,6 +17,6 @@ class Asc < Formula
   end
 
   test do
-    system "#{bin}/swift-syntax-highlight" "import Foundation\n"
+    system "#{bin}/asc" "import Foundation\n"
   end
 end
