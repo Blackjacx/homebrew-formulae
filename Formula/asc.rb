@@ -3,6 +3,7 @@ class Asc < Formula
   homepage "https://github.com/Blackjacx/Assist"
   url "https://github.com/Blackjacx/Assist.git", tag: "0.0.11", revision: "30c306effb2bd4cd88e02f202660368d65c58649"
   license "MIT"
+  head "https://github.com/Blackjacx/Assist.git", branch: "develop"
 
   depends_on xcode: [">13.1", :build]
   depends_on macos: [
