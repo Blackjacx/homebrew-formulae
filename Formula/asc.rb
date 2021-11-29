@@ -13,6 +13,6 @@ class Asc < Formula
   end
 
   test do
-    system "#{bin}/asc", "import Foundation"
+    system "#{bin}/asc"
   end
 end
