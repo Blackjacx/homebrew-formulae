@@ -5,18 +5,14 @@ class Asc < Formula
   license "MIT"
   head "https://github.com/Blackjacx/Assist.git", branch: "develop"
 
-  depends_on xcode: [">13.1", :build]
-  depends_on macos: [
-    :catalina,
-    :big_sur,
-    :monterey,
-  ]
+  depends_on xcode: ["13.1", :build]
+  depends_on macos: :monterey
 
   def install
     system "make", "install", "prefix=#{prefix}"
   end
 
   test do
-    system "#{bin}/asc" "import Foundation\n"
+    system "#{bin}/asc", "import Foundation"
   end
 end
