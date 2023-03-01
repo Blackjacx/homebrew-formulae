@@ -3,4 +3,4 @@
 
 # Blackjacx's Homebrew Formulae
 
-- [Assist](https://github.com/Blackjacx/Assist)
+- [ASC • Apple App Store Connect CLI](https://github.com/Blackjacx/Assist)
