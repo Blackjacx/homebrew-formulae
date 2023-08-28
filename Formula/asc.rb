@@ -5,8 +5,8 @@ class Asc < Formula
   license "MIT"
   head "https://github.com/Blackjacx/Assist.git", branch: "develop"
 
-  depends_on xcode: ["13.1", :build]
-  depends_on macos: :monterey
+  depends_on xcode: ["15.0", :build]
+  depends_on macos: :ventura
 
   def install
     system "make", "install", "prefix=#{prefix}"
