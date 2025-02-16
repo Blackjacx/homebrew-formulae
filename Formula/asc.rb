@@ -13,6 +13,6 @@ class Asc < Formula
   end
 
   test do
-    system "#{bin}/asc"
+    system "bin/asc"
   end
 end
