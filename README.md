@@ -20,5 +20,5 @@ In this case you just run `brew update-reset && brew update` which shiuld remove
 
 ## Manual bump
 
-1. Update `tag` and `revision` in https://github.com/Blackjacx/homebrew-formulae/blob/main/Formula/asc.rb
-2. Create a PR and merge it
+1. Update `tag` and `revision` in https://github.com/Blackjacx/homebrew-formulae/blob/main/Formula/asc.rb.
+2. Create a PR with the title `Bump \`asc\` to version 0.5.2` and merge it.
