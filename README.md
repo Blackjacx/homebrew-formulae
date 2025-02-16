@@ -18,6 +18,20 @@ and old version are both 0.5.2.
 
 In this case you just run `brew update-reset && brew update` which shiuld remove the local tap and lets you run `brew bump-formula-pr` again.
 
+## Automatic bump
+
+For shell environments:
+
+```shell
+brew bump-formula-pr --no-audit --message="Update Formula $version" --version="$version" $homebrew_formula_name
+```
+
+For Ruby environments:
+
+```ruby
+sh "brew bump-formula-pr --no-audit --message=\"Update Formula #{version}\" --version=\"#{version}\" #{homebrew_formula_name}"
+```
+
 ## Manual bump
 
 1. Update `tag` and `revision` in https://github.com/Blackjacx/homebrew-formulae/blob/main/Formula/asc.rb.
