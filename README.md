@@ -7,13 +7,9 @@
 
 # Troubleshooting
 
-When running into the issue 
+## `Error: key not found: "clone_url"`
 
-```
-Error: key not found: "clone_url"
-```
-
-then a tab with the specified tag has been created locally and running the command again will result in 
+When running into the issue then a tab with the specified tag has been created locally and running the command again will result in 
 
 ```
 Error: You need to bump this formula manually since the new version
@@ -21,3 +17,8 @@ and old version are both 0.5.2.
 ```
 
 In this case you just run `brew update-reset && brew update` which shiuld remove the local tap and lets you run `brew bump-formula-pr` again.
+
+## Manual bump
+
+1. Update `tag` and `revision` in https://github.com/Blackjacx/homebrew-formulae/blob/main/Formula/asc.rb
+2. Create a PR and merge it
