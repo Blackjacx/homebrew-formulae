@@ -34,5 +34,8 @@ sh "brew bump-formula-pr --no-audit --message=\"Update Formula #{version}\" --ve
 
 ## Manual bump
 
-1. Update `tag` and `revision` in https://github.com/Blackjacx/homebrew-formulae/blob/main/Formula/asc.rb.
+1. Update `tag` and `revision` in https://github.com/Blackjacx/homebrew-formulae/blob/main/Formula/asc.rb. Get the revision by running:
+    ```shell
+     shasum -a 256 ~/Downloads/Assist-0.8.1.tar.gz | awk '{ print $1 }'
+    ```
 2. Create a PR with the title `Bump asc to version 0.5.2` and merge it.
