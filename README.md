@@ -16,7 +16,7 @@ Error: You need to bump this formula manually since the new version
 and old version are both 0.5.2.
 ```
 
-In this case you just run `brew update-reset && brew update` which shiuld remove the local tap and lets you run `brew bump-formula-pr` again.
+In this case you just run `brew update-reset && brew update` which should remove the local tap and lets you run `brew bump-formula-pr` again.
 
 ## Automatic bump
 
@@ -34,8 +34,15 @@ sh "brew bump-formula-pr --no-audit --message=\"Update Formula #{version}\" --ve
 
 ## Manual bump
 
+> [!tip]
+> If the below does not work you can also try to manually run the command using:
+> ```shell
+> brew bump-formula-pr --no-audit --message="Update Formula 0.9.0" --version="0.9.0" "blackjacx/formulae/asc"
+> ```
+
 1. Update `tag` and `revision` in https://github.com/Blackjacx/homebrew-formulae/blob/main/Formula/asc.rb. Get the revision by running:
     ```shell
      shasum -a 256 ~/Downloads/Assist-0.8.1.tar.gz | awk '{ print $1 }'
     ```
 2. Create a PR with the title `Bump asc to version 0.5.2` and merge it.
+
