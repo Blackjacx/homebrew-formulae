@@ -1,8 +1,8 @@
 class Asc < Formula
   desc "App Store Connect API access via Swift command-line tool"
   homepage "https://github.com/Blackjacx/Assist"
-  url "https://github.com/Blackjacx/Assist/archive/refs/tags/0.8.1.tar.gz"
-  sha256 "0531a952778442e370e8326fb348fa68db0fe747410358e3f035b59ee706281f"
+  url "https://github.com/Blackjacx/Assist/archive/refs/tags/0.9.0.tar.gz"
+  sha256 "35d2492d674981f072a916b588e089a6d1bf5bc52fbf652b694d4814369bc36f"
   license "MIT"
   head "https://github.com/Blackjacx/Assist.git", branch: "develop"
 
